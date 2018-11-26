@@ -45,12 +45,12 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 ########################################################################
 import rosegraphics as rg
 window = rg.TurtleWindow()
-blueturtle = rg.SimpleTurtle("turtle")
-blueturtle.pen = rg.Pen("blue",30)
-blueturtle.forward(200)
+blueturtle = rg.SimpleTurtle("turtle") #define the shape of the blueturtle
+blueturtle.pen = rg.Pen("blue",30) #blue pen with thickness of 30
+blueturtle.forward(200) #move forward
 blueturtle.pen_up()
-blueturtle.go_to(rg.Point(100,-40))
+blueturtle.go_to(rg.Point(100,-40)) #directly to the point
 blueturtle.pen_down()
-blueturtle.pen = rg.Pen("green",10)
-blueturtle.go_to(rg.Point(100,-140))
+blueturtle.pen = rg.Pen("green",10) #change to green pen
+blueturtle.go_to(rg.Point(100,-140)) # a simple calculation: from point (100,-40) and go down 100 pixels is Point (100,-140)
 window.close_on_mouse_click()
