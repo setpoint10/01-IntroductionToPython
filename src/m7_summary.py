@@ -47,6 +47,7 @@ import rosegraphics as rg
 window = rg.TurtleWindow()
 blueturtle = rg.SimpleTurtle("turtle") #define the shape of the blueturtle
 blueturtle.pen = rg.Pen("blue",30) #blue pen with thickness of 30
+blueturtle.left(90)
 blueturtle.forward(200) #move forward
 blueturtle.pen_up()
 blueturtle.go_to(rg.Point(100,-40)) #directly to the point
